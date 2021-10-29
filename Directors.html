@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Det här länkar min CSS till min HTML -->
+    <title>Directors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <!-- Jag annvänder <nav> taggen för att ha en global meny på alla mina sidor -->
+        <div class="global_navigation">
+            <!-- Här annvänder jag mig av extern CSS för att skapa en grid, varje element har sitt unika namn (itemx) så att jag vet skillnaden mellan dem -->
+            <div class="item4">
+                <a href="index.html">Main page</a>
+                <!-- Dessa är länkar till mina andra sidor -->
+            </div>
+            <div class="item2">
+                <a href="Actors.html">Good movie actors</a>
+            </div>
+            <div class="item3">
+                <a href="Movies.html">Good movies to watch</a>
+            </div>
+            <div class="item1">
+                <a href="Directors.html">Good movie directors</a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <!-- Jag annvänder <header> taggen för att få ett bra sidhuvud. Jag annvänder också ordet "top" i css:en för elementet ska vara längst up -->
+        <div class="top">
+            Welcome to the Director section!
+        </div>
+    </header>
+    <main>
+        <!-- Jag har annvänt <main> taggen här, eftersom den större delen av min text är här -->
+        <p>Here is where i will discuss about good people making good films!</p>
+        <!-- Här annvänder jag mig av en <a> tagg, som länkar till en sida med href="", sedan har jag en <img> tagg innuti, som visar en bild med src="" som länk adress. 
+        jag har också en alt="" attribut som gör att om bilden inte laddas in så finns en text som förklarar vad bilden ska vara -->
+        <a href="https://www.imdb.com/name/nm0000233/">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTgyMjI3ODA3Nl5BMl5BanBnXkFtZTcwNzY2MDYxOQ@@._V1_UY1200_CR76,0,630,1200_AL_.jpg" class="quentin" alt="Image of Quentin Tarantino">
+        </a>
+        <h1>Quentin Tarantino is an esteemed director, that has made classics such as:</h1>
+        <ul>
+            <!-- Här har jag skapat en lista, eftersom att jag rablar upp ett ental saker -->
+            <li>
+                Pulp Fiction
+            </li>
+            <li>
+                Django Unchained
+            </li>
+            <li>
+                Kill Bill
+            </li>
+        </ul>
+        <p class="regular_txt">Quentin Tarantino is famous for depicting gruesome violence in his movies<br>and he is great at making interesting characters that can be lost in an instant.</p>
+        <h2>You can acces his IMDB by clicking on his image as depicted above!</h2>
+    </main>
+    <footer>
+        <!-- Jag annvänder mig av <footer> taggen, eftersom allt som är i ska vara längst ner på sidan, som mitt namn och klass. Jag gjorde det till en grid ,
+        så att det skulle vara enklare för mig att lägga ut mina andra element.  -->
+        <div class="feet">
+            <!-- Jag kallar dessa element för "feet" och "toe" bara för att de tillhör <footer> elementet -->
+            <div class="toe1">
+                Rasmus J
+            </div>
+            <div class="toe2">
+                Te20C
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>

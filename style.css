@@ -1,0 +1,140 @@
+/* Här och tre attribut ner annvänder jag mig av psudo:kod, den aktiveras bara när man håller muspekaren över något. Jag har ändrat så att länkar har andra färger.  */
+a:link{
+    color: blue;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    color: blue;
+}
+a:active{
+    color: blue;
+}
+/* Här finns CSS för min header tagg, den kallas .top för att den är längst upp. Ändrar t.ex färg och storlek. Är också en klass selektor */
+.top{
+    background-color: aquamarine;
+    border: 1px solid black;
+    font-size: 300%;
+    text-align: center;
+}
+/* Css för hela body taggen, jag har bara ändrat bakgrunds färgen, är också en typ selektor */
+body{
+    background-color: blanchedalmond;
+}
+/* Css för alla bilder, den definerar bara storlek och posititon */
+img{
+    width: 60%;
+    height: 70%;
+    padding-left: 20%;
+}
+/* CSS för alla all vanlig text, ändrar t.ex färg och storlek */
+p{
+    background-color: lightblue;
+    font-size: large;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px lightcoral;
+    color: lightgoldenrodyellow;
+}
+/* En grupp selektor för h1 och h2 tagen, ändar typsnittet. Är också en grupp selektor */
+h1, h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+/* jag annvänder mig av global_navigation för att det blir mindre kod om den inheritar från <nav> taggen, då man måste skriva om koden igen. 
+Detta är också en grid och bestämmer färg och storlek på elementet */
+.global_navigation{
+    background-color: brown;
+    padding: 2ex;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+}
+/* Text storlek och centrerad text i min lista */
+ul{
+    text-shadow: 2px 2px goldenrod;
+    text-align: center;
+    list-style: none;
+    font-size: x-large;
+}
+/* Ett av mina grid element. Tillhör navigations menyn */
+.item1{
+    grid-column: 4;
+    font-size: 300%;
+    border: 1px solid black;
+    background-color: gray;
+}
+/* Ett av mina grid element. Tillhör navigations menyn */
+.item2{
+    grid-column: 2;
+    font-size: 300%;
+    border: 1px solid black;
+    background-color: darkgray;
+}
+/* Ett av mina grid element. Tillhör navigations menyn */
+.item3{
+    grid-column: 3;
+    font-size: 300%;
+    border: 1px solid black;
+    background-color: gray;
+}
+/* Ett av mina grid element. Tillhör navigations menyn */
+.item4{
+    grid-column: 1;
+    font-size: 300%;
+    border: 1px solid black;
+    background-color: darkgray;
+}
+/* En grid för min <footer> element, bestämmer också bakrundsfärg samt storlek på element och text */
+.feet{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    background-color: peru;
+    text-align: center;
+    margin: 5%;
+    font-size: x-large;
+    color: yellow;
+}
+/* Ett av mina grid element för <footer> griden */
+.toe1{
+    grid-column: 1;
+    background-color: rebeccapurple;
+}
+/* Ett av mina grid element för <footer> griden */
+.toe2{
+    grid-column: 8;
+    background-color: rebeccapurple;
+}
+/* CSS för bild på Quentin därav element namnet */
+.quentin{
+    width: 15%;
+    height: 25%;
+    margin-left: 22%;
+}
+/* CSS för bild på Leonardo därav element namnet */
+.leonardo{
+    width: 40%;
+    height: 50%;
+    margin-left: 10%;
+}
+/* CSS för att få en mer vanligare text, då jag redan definerat vad <p> taggen ska se ut, för att jag ville göra ett undantag */
+.regular_txt{
+    color: black;
+    text-align: left;
+    text-shadow: 0px 0px black;
+    background-color: cornflowerblue;
+    margin-right: 60%;
+}
+/* CSS för zebra-striping i <table> */
+tr:nth-child(even){
+    background-color: black;
+    color: white;
+    text-align: left;
+}
+/* CSS för zebra-striping i <table> */
+tr:nth-child(odd){
+    background-color: white;
+    color: black;
+    text-align: left;
+}

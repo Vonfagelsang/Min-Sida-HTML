@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Det här länkar min CSS till min HTML -->
+    <link rel="stylesheet" href="style.css">
+    <title>Min sida</title>
+</head>
+<body>
+    <!-- Jag annvänder <nav> taggen för att ha en global meny på alla mina sidor -->
+    <nav>
+        <div class="global_navigation">
+            <!-- Här annvänder jag mig av extern CSS för att skapa en grid, varje element har sitt unika namn (itemx) så att jag vet skillnaden mellan dem -->
+            <div class="item4">
+                <a href="index.html">Main page</a>
+                <!-- Dessa är länkar till mina andra sidor -->
+            </div>
+            <div class="item2">
+                <a href="Actors.html">Good movie actors</a>
+            </div>
+            <div class="item3">
+                <a href="Movies.html">Good movies to watch</a>
+            </div>
+            <div class="item1">
+                <a href="Directors.html">Good movie directors</a>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <!-- Jag annvänder <header> taggen för att få ett bra sidhuvud. Jag annvänder också ordet "top" i css:en för elementet ska vara längst up -->
+        <div class="top">
+            Welcome!
+        </div>
+    </header>
+    <main>
+        <!-- Jag har annvänt <main> taggen här, eftersom den större delen av min text är här -->
+        <p>This is my page, and it contains tons of movie stuff!<br>For example: </p>
+        <ul>
+            <!-- Här har jag skapat en lista, eftersom att jag rablar upp ett ental saker -->
+            <li>
+                Different movie directors,
+            </li>
+            <li>
+                Cool actors,
+            </li>
+            <li>
+                And my favorite selection of movies, that you should watch too!
+            </li>
+        </ul>
+        <!-- Här är en länk till en bild, som annvänder sig av en alt tagg. Alt taggen är där om sidan inte kunnde hitta bilden, som en förklaring för vad som ska vara där -->
+        <img src="https://24.media.tumblr.com/2aec8c91d740536803b10ef762443f1d/tumblr_mijouexOP61rdutw3o1_400.gif" alt="Image of Michael Jackson">
+    </main>
+    <footer>
+        <!-- Jag annvänder mig av <footer> taggen, eftersom allt som är i ska vara längst ner på sidan, som mitt namn och klass. Jag gjorde det till en grid ,
+        så att det skulle vara enklare för mig att lägga ut mina andra element.  -->
+        <div class="feet">
+            <!-- Jag kallar dessa element för "feet" och "toe" bara för att de tillhör <footer> elementet -->
+            <div class="toe1">
+                Rasmus J
+            </div>
+            <div class="toe2">
+                Te20C
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
