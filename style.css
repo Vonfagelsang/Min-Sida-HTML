@@ -1,4 +1,4 @@
-/* Här och tre attribut ner annvänder jag mig av psudo:kod, den aktiveras bara när man håller muspekaren över något. Jag har ändrat så att länkar har andra färger.  */
+/* Här och tre attribut ner, annvänder jag mig av psudo:kod, den aktiveras bara när man håller muspekaren över något. Jag har ändrat så att länkar har andra färger.  */
 a:link{
     color: blue;
 }
@@ -11,24 +11,25 @@ a:hover{
 a:active{
     color: blue;
 }
-/* Här finns CSS för min header tagg, den kallas .top för att den är längst upp. Ändrar t.ex färg och storlek. Är också en klass selektor */
+/* Här finns CSS för min header tagg, den kallas .top för att den är längst upp. Ändrar t.ex färg, storlek och centrerar texten i mitten av elementet. 
+Är också en klass selektor för att det är en punkt framför (top) */
 .top{
     background-color: aquamarine;
     border: 1px solid black;
     font-size: 300%;
     text-align: center;
 }
-/* Css för hela body taggen, jag har bara ändrat bakgrunds färgen, är också en typ selektor */
+/* Css för hela body taggen, jag har bara ändrat bakgrunds färgen, är också en typ selektor eftersom att jag bara skriven in själva html taggen */
 body{
     background-color: blanchedalmond;
 }
-/* Css för alla bilder, den definerar bara storlek och posititon */
+/* Css för alla bilder, den definerar bara storlek och posititon på sidan */
 img{
     width: 60%;
     height: 70%;
     padding-left: 20%;
 }
-/* CSS för alla all vanlig text, ändrar t.ex färg och storlek */
+/* CSS för alla all vanlig text, ändrar t.ex färg, storlek, typsnitt, positionen på texten, textsnittet och så har jag laggt till en liten skugga på texten med (text-shadow) */
 p{
     background-color: lightblue;
     font-size: large;
@@ -37,13 +38,13 @@ p{
     text-shadow: 2px 2px lightcoral;
     color: lightgoldenrodyellow;
 }
-/* En grupp selektor för h1 och h2 tagen, ändar typsnittet. Är också en grupp selektor */
+/* En grupp selektor för h1 och h2 tagen, ändar typsnittet. Är en grupp selektor för att jag skriver in mer än en html tagg. */
 h1, h2{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
 }
-/* jag annvänder mig av global_navigation för att det blir mindre kod om den inheritar från <nav> taggen, då man måste skriva om koden igen. 
-Detta är också en grid och bestämmer färg och storlek på elementet */
+/* jag annvänder mig av global_navigation för att det jag inte kunde få den att inherita från <nav> taggen, så jag annvände mig av en klasselektor direkt på <div> taggen. 
+Detta är en grid och den bestämmer färg, storlek och jag centrerar texten i mitten av elementet. Jag annvänder 4 auto i grid- */
 .global_navigation{
     background-color: brown;
     padding: 2ex;
@@ -51,14 +52,15 @@ Detta är också en grid och bestämmer färg och storlek på elementet */
     grid-template-columns: auto auto auto auto;
     text-align: center;
 }
-/* Text storlek och centrerad text i min lista */
+/* Text storlek och centrerad text i min lista. Jag annvänder mig också av en text skugga, en text storlek och jag centrerar texten i mitten av elementet. jag har också ingen list style, så att
+det inte har några prickar eller liknande framför texten. */
 ul{
     text-shadow: 2px 2px goldenrod;
     text-align: center;
     list-style: none;
     font-size: x-large;
 }
-/* Ett av mina grid element. Tillhör navigations menyn */
+/* Ett av mina grid element. Tillhör navigations menyn. Jag sätter den i column 4 och har en stor relativ text storlek. jag annvänder också en border med backgrunds färg så att man kan se skillnad på elementet och griden.  */
 .item1{
     grid-column: 4;
     font-size: 300%;
@@ -86,7 +88,7 @@ ul{
     border: 1px solid black;
     background-color: darkgray;
 }
-/* En grid för min <footer> element, bestämmer också bakrundsfärg samt storlek på element och text */
+/* En grid för min <footer> element, bestämmer också bakrundsfärg samt storlek på element och text. Jag har också en centrerad text, och en margin på 5%. Den är där så att elementet sitter lite mer seperat i sidan. */
 .feet{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto auto auto;
@@ -96,7 +98,7 @@ ul{
     font-size: x-large;
     color: yellow;
 }
-/* Ett av mina grid element för <footer> griden */
+/* Ett av mina grid element för <footer> griden. bestämmer färg och position. */
 .toe1{
     grid-column: 1;
     background-color: rebeccapurple;
@@ -106,7 +108,7 @@ ul{
     grid-column: 8;
     background-color: rebeccapurple;
 }
-/* CSS för bild på Quentin därav element namnet */
+/* CSS för bild på Quentin därav element namnet. Bestämmer storlek och position i sidan med margin. */
 .quentin{
     width: 15%;
     height: 25%;
@@ -118,7 +120,8 @@ ul{
     height: 50%;
     margin-left: 10%;
 }
-/* CSS för att få en mer vanligare text, då jag redan definerat vad <p> taggen ska se ut, för att jag ville göra ett undantag */
+/* CSS för att få en mer vanligare text, då jag redan definerat vad <p> taggen ska se ut, för att jag ville göra ett undantag. Gör så att texten åker på vänstra sidan av sidan, jag bestämmer färg och bakgrundsfärg,
+jag har också en täxt skugga och en margin på höger, så att texten är mer mot mitten av sidan.  */
 .regular_txt{
     color: black;
     text-align: left;
@@ -126,7 +129,7 @@ ul{
     background-color: cornflowerblue;
     margin-right: 60%;
 }
-/* CSS för zebra-striping i <table> */
+/* CSS för zebra-striping i <table> med färg och bakgrunds färg, samt en text som centrerar på vänstra sidan */
 tr:nth-child(even){
     background-color: black;
     color: white;
